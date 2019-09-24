@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
-$primary: rgb(111, 0 ,255);
+$primary: rgb(219,112,147);
 
 body {
     margin: 0;
@@ -8,14 +8,9 @@ body {
     font-size: 18px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 header {
-    background: $primary;
-    padding: 1em 0;
+    padding-top: 1em 0;
+    text-align: center;
 
     a {
         color: white;
@@ -27,12 +22,12 @@ header {
     }
 
     nav {
-        float: right;
-
+        background: $primary;
         ul {
             list-style-type: none;
             margin: 0;
             display: flex;
+            padding: 1em;
             li a {
                 padding: 1em;
                 &:hover {
@@ -42,3 +37,4 @@ header {
         }
     }
 }
+

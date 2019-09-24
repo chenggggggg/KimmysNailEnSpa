@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { AfspraakComponent } from './afspraak/afspraak.component';
+import { BehandelingenComponent } from './behandelingen/behandelingen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AfspraakComponent
+    AfspraakComponent,
+    BehandelingenComponent
   ],
   imports: [
     BrowserModule,
