@@ -39,8 +39,10 @@ header {
 }
 
 footer{
-    width: 100%;
-    height: 350px;
+    -webkit-box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
+    height: 400px;
     background-color: $primary;
     color: white;
 
@@ -56,9 +58,27 @@ footer{
     .footer-content{
         .footer-pane{
             margin: 60px;
-            width: 20%;
+            width: 15%;
             float:left;
+            .tijd{
+                float: right;
+            }
+            hr{
+                margin: 0;
+                width: 20%;
+                border-color: rgb(212, 85, 127);
+            }
         }
     }
+}
+
+.socialicon{
+    width: 30px;
+    height: 30px;
+}
+
+.social{
+    float: left;
+    padding-right: 5px;
 }
 
