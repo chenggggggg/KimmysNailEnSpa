@@ -38,3 +38,27 @@ header {
     }
 }
 
+footer{
+    width: 100%;
+    height: 350px;
+    background-color: $primary;
+    color: white;
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        li a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .footer-content{
+        .footer-pane{
+            margin: 60px;
+            width: 20%;
+            float:left;
+        }
+    }
+}
+
