@@ -2,15 +2,31 @@
 
 $primary: rgb(219,112,147);
 
-body {
-    margin: 0;
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     font-family: 'Nunito', 'sans-serif';
     font-size: 18px;
 }
 
+.container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
 header {
+    width: 100%;
     padding-top: 1em 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
 
     a {
         color: white;
@@ -39,6 +55,10 @@ header {
 }
 
 footer{
+    min-height: 40%;
+    min-width: 100%;
+    padding: 30px;
+    overflow: auto;
     -webkit-box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
     box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
@@ -54,21 +74,19 @@ footer{
         }
     }
 
-    .footer-content{
-        display: flex;
-        min-height: 30vh;
-        .footer-pane{
-            display: block;
-            margin: 60px;
-            width: 15%;
-            .tijd{
-                float: right;
-            }
-            hr{
-                margin: 0;
-                width: 20%;
-                border-color: rgb(212, 85, 127);
-            }
+    .footer-pane{
+        float: left;
+        min-height: 30%;
+        min-width: 200px;
+        width: 15%;
+        padding: 20px;
+        .tijd{
+            float: right;
+        }
+        hr{
+            margin: 0;
+            width: 20%;
+            border-color: rgb(212, 85, 127);
         }
     }
 }
@@ -83,3 +101,30 @@ footer{
     padding-right: 5px;
 }
 
+@media only screen and (max-width: 528px) {
+    /*shows elements in a column*/
+    ul{
+      flex-direction: column;
+      margin: 0;
+    }
+    
+    /* deletes margin on top or bottom of the a tag*/
+    li{
+      margin: 0;
+    }
+   /* makes sure that the a tag will take the entire screen*/
+    a{
+      display: block;
+    }
+  }
+
+  
+@media only screen and (max-width: 1200px) {
+    #preview{
+        background-repeat: no-repeat;
+        background-size: cover !important;
+    }
+    header{
+        position: static;
+    }
+  }
