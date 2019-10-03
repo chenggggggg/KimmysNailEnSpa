@@ -42,7 +42,6 @@ footer{
     -webkit-box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
     box-shadow: inset 0px 32px 8px -24px rgba(0,0,0,0.75);
-    height: 400px;
     background-color: $primary;
     color: white;
 
@@ -56,10 +55,12 @@ footer{
     }
 
     .footer-content{
+        display: flex;
+        min-height: 30vh;
         .footer-pane{
+            display: block;
             margin: 60px;
             width: 15%;
-            float:left;
             .tijd{
                 float: right;
             }
