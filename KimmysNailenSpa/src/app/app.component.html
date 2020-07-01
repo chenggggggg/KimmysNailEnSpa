@@ -1,14 +1,18 @@
 <header>
-  <a href="#" class="logo">
-    <img src="assets/logo.png">
-  </a>
-  <nav>
-    <ul>
-      <li><a href="#" routerLink="/">HOME</a></li>
-      <li><a href="#" routerLink="/behandelingen">BEHANDELINGEN</a></li>
-      <li><a href="#" routerLink="/afspraak">AFSPRAAK MAKEN</a></li>
-    </ul>
-  </nav>
+  <div class="navigation">
+    <div class="logo">
+      <a href="#">
+        <img src="assets/logo.png" width="250" height="125">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" routerLink="/">HOME</a></li>
+        <li><a href="#" routerLink="/">BEHANDELINGEN</a></li>
+        <li><a href="#" routerLink="/afspraak">AFSPRAAK MAKEN</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <div class="container">
@@ -16,48 +20,86 @@
 </div>
 
 <footer>
-  <div class="footer-pane">
-    <h3>KIMMY'S NAILS EN SPA</h3>
-    <hr>
-    <ul>
-      <li><a href="#" routerLink="/">Over ons</a></li>
-      <li><a href="#" routerLink="/behandelingen">Behandelingen</a></li>
-      <li><a href="#" routerLink="/afspraak">Afspraak maken</a></li>
-    </ul>
-  </div>
-  <div class="footer-pane">
-    <h3>CONTACT</h3>
-    <hr>
-    <ul>
-      <li>Koningsschild 14</li>
-      <li>5051 TT Goirle</li>
-      <li>06 15517294</li>
-    </ul>
-  </div>
-  <div class="footer-pane">
-    <h3>OPENINGSTIJDEN</h3>
-    <hr>
-    <ul>
-      <li>maandag<span class="tijd">10:00 - 18:00</span></li>
-      <li>dinsdag<span class="tijd">10:00 - 18:00</span></li>
-      <li>woensdag<span class="tijd">10:00 - 18:00</span></li>
-      <li>donderdag<span class="tijd">10:00 - 18:00</span></li>
-      <li>vrijdag<span class="tijd">10:00 - 20:00</span></li>
-      <li>zaterdag<span class="tijd">10:00 - 18:00</span></li>
-      <li>zondag<span class="tijd">12:00 - 18:00</span></li>
-    </ul>
-  </div>
-  <div class="footer-pane">
-    <h3>SOCIAL</h3>
-    <hr>
-    <ul>
-      <li class="social"><a href="https://www.facebook.com/kimmysnailsenspa"><img class="socialicon"
-            src="assets/facebook-icon.png"></a></li>
-      <li class="social"><a
-          href="https://www.instagram.com/explore/locations/308095533039422/kimmys-nails-en-spa/?fbclid=IwAR0Q9OzEw9b1Y050JLF_nsiDxvR3iYrU8F6SMh7DDaEolaWKCAzZRPN5GA0">
-          <img class="socialicon" src="assets/instagram-icon.png"></a></li>
-      <li class="social"><a href="mailto:kimmynailsenspa@gmail.com"><img class="socialicon"
-            src="assets/email-icon.png"></a></li>
-    </ul>
+  <div class="footer-container">
+    <div id="adres" class="footer-content">
+      <h3>Adres</h3>
+        De klef 6
+        <br>
+        5846 HT Sint Anthonis
+        <br>
+        06 52054190
+    </div>
+    <div id="openingstijden" class="footer-content"> 
+      <h3>Openingstijden</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <span style="font-size: 18px;">maandag</span>
+            </td>
+            <td>
+              <span style="font-size: 18px;">13:00 - 18:00</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 18px;">dinsdag</span>
+            </td>
+            <td>
+              <span style="font-size: 18px;">09:00 - 18:00</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 18px;">woensdag</span>
+            </td>
+            <td>
+              <span style="font-size: 18px;">09:00 - 18:00</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 18px;">donderdag</span>
+            </td>
+            <td>
+              <span style="font-size: 18px;">09:00 - 18:00</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 18px;">vrijdag</span>
+            </td>
+            <td>
+              <span style="font-size: 18px;">09:00 - 18:00</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 18px;">zaterdag</span>
+            </td>
+            <td>
+              <span style="font-size: 18px;">10:00 - 18:00</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 18px;">zondag</span>
+            </td>
+            <td>
+              <span style="font-size: 18px;">gesloten</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="social" class="footer-content">
+      <h3>SOCIAL</h3>
+      <ul>
+        <li class="social"><a href="https://www.facebook.com/kimmysnailsenspa"><img class="socialicon"
+              src="assets/facebook-icon.png"></a></li>
+        <li class="social"><a href="mailto:kimmynailsenspa@gmail.com"><img class="socialicon"
+              src="assets/email-icon.png"></a></li>
+      </ul>
+    </div>
   </div>
 </footer>
