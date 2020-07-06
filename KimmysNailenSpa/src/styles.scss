@@ -50,7 +50,7 @@ header {
         }
     }
 
-    nav {
+    .navbar-default {
         display: block;
         float: right;
         ul {
@@ -73,12 +73,12 @@ header {
     box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
     position: fixed;
     top: 0;
-    height: 93px;
+    height: 75px;
     width: 100%;
     .logo{
         a{
             img{
-                height: 93px;
+                height: 75px;
             }
         }
     }
@@ -103,50 +103,47 @@ footer{
     background-color: $primary;
     color: white;
     position: absolute;
-    display: block;
     left: 0;
     right: 0;
-    text-align: center;
 
-    ul{
-        list-style-type: none;
-        padding: 0;
-        li a{
-            color: white;
-            text-decoration: none;
-        }
+    h3{
+        text-align: center;
     }
 
     .footer-container{
-        width: auto;
-        height: auto;
         display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
+
+        ul{
+            padding: 0;
+        }
         
         .footer-content{
             float: left;
             padding: 30px;
         }
-
-        #adres{
-            width: 20%;
-            text-align: left;
-        }
         #openingstijden{
-            td{
-                text-align: center;
-                #time{
-                    text-align: right;
-                    float: right;
-                }
+            list-style-type: none;
+            li{
+                padding-bottom: 10px;
             }
-            width: 37.5%;
         }
         #social{
             float: left;
         }
     }
+    
+    #list-border{
+        list-style-type: none;
+        .pull-left{
+            float: left;
+            padding-right: 20px;
+        }
+        .pull-right{
+            float: right;
+        }
+    }
+
+    
 }
 
 .socialicon{
@@ -158,6 +155,12 @@ footer{
     display: inline-block;
     padding-right: 5px;
 }
+
+@media only screen and (max-width: 700px) {
+    .navbar-default{
+        visibility: hidden;
+    }
+  }
 
 @media only screen and (max-width: 528px) {
     header{
@@ -181,16 +184,5 @@ footer{
 
     .container{
         padding-top: 0px;
-    }
-  }
-
-  
-@media only screen and (max-width: 1200px) {
-    #preview{
-        background-repeat: no-repeat;
-        background-size: cover !important;
-    }
-    header{
-        position: static;
     }
   }

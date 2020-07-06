@@ -34,10 +34,12 @@
 
 #quote{
     float: initial;
-    background-image: url(../../assets/quote-wallpaper.png);
-    background-attachment: scroll;
-    background-size: cover;
-    height: 100vh;
+    img{
+        background-attachment: scroll;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 #nails-pedicure{
@@ -89,3 +91,50 @@
     color: #bbb;
     margin-bottom: 1em;
   }
+  
+@media only screen and (max-width: 1550px) {
+    #quote{
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    #aboutus{
+        padding: 50px;
+    }
+}
+@media only screen and (max-width: 1200px) {  
+    #wrapper{
+        #quote{
+            position: relative;
+            height: auto;
+        }
+    }
+    #aboutus{
+        padding: 50px;
+    }
+    .behandeling-content{
+        margin: 70px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #aboutus{
+        margin: 10vh;
+        padding: 30px;
+    }
+    .behandeling-content{
+        margin: 40px;
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #aboutus{
+        margin: 5vh;
+        padding: 20px;
+    }
+    
+    .behandeling-content{
+        margin: 20px;
+        width: 70%;
+    }
+}
