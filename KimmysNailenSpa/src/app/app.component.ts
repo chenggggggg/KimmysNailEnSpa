@@ -1,9 +1,18 @@
 import { Component, HostListener } from '@angular/core';
+import { trigger, state, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('fade',
+      [
+        state('void', style({ opacity: 0 })),
+        transition(':enter', [animate(300)]),
+        transition(':leave', [animate(500)]),
+      ]
+    )]
 })
 export class AppComponent {
   title = 'KimmysNailenSpa';
@@ -11,12 +20,17 @@ export class AppComponent {
 
   @HostListener('window:scroll', ['$event'])
 
+
   onWindowScroll(e) {
-    let element = document.querySelector('.navbar');
-    if (window.pageYOffset > element.clientHeight) {
-      element.classList.add('navbar-inverse');
+    if (window.pageYOffset > 110) {
+      let element = document.getElementById('navbar');
+      element.classList.add('sticky');
     } else {
-      element.classList.remove('navbar-inverse');
+      let element = document.getElementById('navbar');
+      element.classList.remove('sticky');
     }
+  }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
   }
 }

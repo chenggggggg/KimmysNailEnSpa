@@ -1,15 +1,15 @@
-<header>
-  <div class="navigation">
+<header (scroll)="onWindowScroll($event);">
+  <div class="animated fadeInDown" id="navbar">
     <div class="logo">
       <a href="#">
-        <img src="assets/logo.png" width="250" height="125">
+        <img src="assets/logo.png">
       </a>
     </div>
-    <nav (scroll)="onWindowScroll($event);">
+    <nav>
       <ul>
-        <li><a href="#" routerLink="/">HOME</a></li>
-        <li><a href="#" routerLink="/">BEHANDELINGEN</a></li>
-        <li><a href="#" routerLink="/">AFSPRAAK MAKEN</a></li>
+        <li><a href="#aboutus" target="_self">HOME</a></li>
+        <li><a href="#behandelingen" target="_self">BEHANDELINGEN</a></li>
+        <li><a href="#openingstijden" target="_self">AFSPRAAK MAKEN</a></li>
       </ul>
     </nav>
   </div>
