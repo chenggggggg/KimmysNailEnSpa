@@ -5,11 +5,11 @@
         <img src="assets/logo.png" width="250" height="125">
       </a>
     </div>
-    <nav>
+    <nav (scroll)="onWindowScroll($event);">
       <ul>
         <li><a href="#" routerLink="/">HOME</a></li>
         <li><a href="#" routerLink="/">BEHANDELINGEN</a></li>
-        <li><a href="#" routerLink="/afspraak">AFSPRAAK MAKEN</a></li>
+        <li><a href="#" routerLink="/">AFSPRAAK MAKEN</a></li>
       </ul>
     </nav>
   </div>
@@ -23,13 +23,13 @@
   <div class="footer-container">
     <div id="adres" class="footer-content">
       <h3>Adres</h3>
-        De klef 6
-        <br>
-        5846 HT Sint Anthonis
-        <br>
-        06 52054190
+      De klef 6
+      <br>
+      5846 HT Sint Anthonis
+      <br>
+      06 52054190
     </div>
-    <div id="openingstijden" class="footer-content"> 
+    <div id="openingstijden" class="footer-content">
       <h3>Openingstijden</h3>
       <table>
         <tbody>
@@ -95,7 +95,7 @@
     <div id="social" class="footer-content">
       <h3>SOCIAL</h3>
       <ul>
-        <li class="social"><a href="https://www.facebook.com/kimmysnailsenspa"><img class="socialicon"
+        <li class="social"><a href="https://www.facebook.com/Kimmy-nails-pedicure-106911217723617"><img class="socialicon"
               src="assets/facebook-icon.png"></a></li>
         <li class="social"><a href="mailto:kimmynailsenspa@gmail.com"><img class="socialicon"
               src="assets/email-icon.png"></a></li>
