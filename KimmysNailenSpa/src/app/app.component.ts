@@ -22,7 +22,7 @@ export class AppComponent {
 
 
   onWindowScroll(e) {
-    if (window.pageYOffset > 110) {
+    if (window.pageYOffset > 110 && document.documentElement.clientWidth > 900) {
       let element = document.getElementById('navbar');
       element.classList.add('sticky');
     } else {

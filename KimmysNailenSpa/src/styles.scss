@@ -156,15 +156,12 @@ footer{
     padding-right: 5px;
 }
 
-@media only screen and (max-width: 700px) {
-    .navbar-default{
-        visibility: hidden;
-    }
-  }
-
-@media only screen and (max-width: 528px) {
+@media only screen and (max-width: 900px) {
     header{
         padding-top: 0px;
+    }
+    body{
+        position: relative;
     }
     /*shows elements in a column*/
     ul{
@@ -185,4 +182,16 @@ footer{
     .container{
         padding-top: 0px;
     }
-  }
+}
+
+  @media only screen and (max-width: 530px) {
+    header{
+        .logo{
+            a{
+                img {
+                    height: 75px;
+                }
+            }
+        }
+    }
+}
